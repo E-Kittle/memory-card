@@ -1,10 +1,13 @@
-import './App.css';
+import './styles/App.css';
+import Header from './Components/Header';
+import Game from './Components/Game';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Memory Card App</h1>
+        <Header highScore='0' score='0' />
+        <Game />
       </header>
     </div>
   );
