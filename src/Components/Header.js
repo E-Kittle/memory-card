@@ -5,7 +5,8 @@ const Header = (props) => {
     return (
         <div className="header">
             <div className="title">
-                <h1>Match the Cards</h1>
+                <h1>Memory Game</h1>
+                <p>Win by clicking on all of the cards, but don't click on a card more than once!</p>
             </div>
 
             <div className="scoreCard">
