@@ -31,11 +31,9 @@ const Game = () => {
         return arr;      
     }
     
-    //This duplicates the cards, shuffles them, and maps through the elements to display them on the DOM
+    //This shuffles the cards and maps through the elements to display them on the DOM
     const displayCards = () => {
-        //Duplicate the cards
         let arr = [...imgArray];
-        arr = arr.concat(arr);
 
         //Shuffle the cards
         const shuffledDeck = shuffleCards(arr);
@@ -46,7 +44,10 @@ const Game = () => {
         })
     };
 
-    
+    const didUserWin = () => {
+        //This is an event handler attached to each cardContainer. 
+        //When the user clicks on the card, we need to check if the current card matches the last card selected. 
+    }
 
 
 
