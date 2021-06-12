@@ -3,6 +3,7 @@ import '../styles/header.css'
 
 const Header = (props) => {
 
+    // Displays the header and the scorecard
     return (
         <div className="header">
             <div className="title">
