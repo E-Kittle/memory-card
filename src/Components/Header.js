@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/header.css'
 
 const Header = (props) => {
 
@@ -10,16 +11,9 @@ const Header = (props) => {
             </div>
 
             <div className="scoreCard">
-                <table>
-                    <tr>
-                        <td>Highscore:</td>
-                        <td>{props.highScore}</td>
-                    </tr>
-                    <tr>
-                        <td>Current Score:</td>
-                        <td>{props.score}</td>
-                    </tr>
-                </table>
+                <h2>Score Card</h2>
+                <p>Highscore: {props.highScore}</p>
+                <p>Current Score: {props.score}</p>
             </div>
         </div>
     )

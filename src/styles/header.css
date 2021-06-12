@@ -1,0 +1,55 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vh;
+    min-height: 100px;
+}
+
+.title {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 48px;
+}
+.scoreCard {
+    align-self: flex-end;
+    margin: 0 auto;
+}
+
+.scoreCard h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.scoreCard p {
+    font-size: 18px;
+    padding-bottom: 10px
+}
+
+@media (max-width: 1100px) {
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        min-height: 200px;
+        grid-gap: 20px
+    }
+
+    .scoreCard h2{
+        margin-bottom: 5px
+    }
+    .scoreCard p {
+        padding-bottom: 3px;
+    }
+}

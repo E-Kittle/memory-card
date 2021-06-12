@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import cat from './images/cat.jpg';
 import Card from './Card';
 import '../styles/game.css';
 
@@ -12,7 +11,7 @@ const Game = (props) => {
     //Highscore and score will somehow have to be passed to Header.js --> need to figure this out later either using a function or Redux
     const [chosenAnimals, setChosenAnimals] = useState([]);
     const [imgArray, setImgArray] = useState([
-        { name: 'Cat', url: 'cat' }, { name: 'Dog', url: 'dog' }, { name: 'Catfish', url: 'catfish' }, { name: 'Fox', url: 'fox' }, { name: 'Gecko', url: 'gecko' }, { name: 'Horse', url: 'horse' }, { name: 'Ladybug', url: 'ladybug' }, { name: 'Narwhal', url: 'narwhal' }, { name: 'Ocelot', url: 'ocelot' }, { name: 'Owl', url: 'owl' }, { name: 'Penguin', url: 'penguin' }, { name: 'Seal', url: 'seal' }, { name: 'Shark', url: 'shark' }, { name: 'Snake', url: 'snake' }, { name: 'Tardigrade', url: 'tardigrade' }
+        { name: 'Cat', url: '/images/cat.jpg' }, { name: 'Dog', url: '/images/dog.jpg' }, { name: 'Catfish', url: '/images/catfish.jpg' }, { name: 'Fox', url: '/images/fox.jpg' }, { name: 'Gecko', url: '/images/gecko.jpeg' }, { name: 'Horse', url: '/images/horse.jpg' }, { name: 'Ladybug', url: '/images/ladybug.jpg' }, { name: 'Narwhal', url: '/images/narwhal.jpg' }, { name: 'Ocelot', url: '/images/ocelot.jpg' }, { name: 'Owl', url: '/images/owl.png' }, { name: 'Penguin', url: '/images/penguin.jpg' }, { name: 'Seal', url: '/images/seal.jpg' }, { name: 'Shark', url: '/images/shark.jpg' }, { name: 'Snake', url: '/images/snake.jpeg' }, { name: 'Tardigrade', url: '/images/tardigrade.jpeg' }
     ]);
     const [userInput, setUserInput] = useState(false);
 
